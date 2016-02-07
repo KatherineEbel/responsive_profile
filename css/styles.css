@@ -20,7 +20,6 @@ h5 {
 
 h2 {
   text-align: center;
-  float: none;
   font-size: 1em;
 }
 
@@ -51,11 +50,6 @@ span {
 
 /* ---- Navigation ---- */
 
-.profile-name {
-  text-align: center;
-  margin: 0;
-}
-
 .main-nav {
   margin-top: 5px;
 }
@@ -78,26 +72,38 @@ span {
   color: ;
 }
 
+.footer-link {
+  font-size: .9em;
+  margin-top: .9em;
+  float: right;
+}
+
+.footer-nav {
+  display: none;
+}
+
 /* ---- Layout Containers ---- */
 
 
 .main-header {
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .container {
+  max-width: 90%;
+  margin: 0 auto;
   text-align: center;
   background-color: #fafafa;
-  padding: 1em;
 }
 
 .profile-description {
-  align-content: center;
+  vertical-align: middle;
 }
 
 .profile-img {
-  max-width: 70%;
+  width: 40%;
+  height: 40%;
 }
 
 .col {
@@ -105,43 +111,44 @@ span {
   padding: 1em;
 }
 
-.footer-name {
-  font-size: .9em;
-  float: left;
-}
-
-.footer-link {
-  font-size: .9em;
-  margin-top: .9em;
-  float: right;
-}
 
 /* ---- Page Elements ---- */
 
-/*
-.main-header img {
-  max-width: 70%;
-  margin-top: 50px;
+.profile-name {
+    margin: 0 auto;
+  }
+
+.headline {
+  float: left;
+  width: 100%;
+  background-color: white;
 }
-*/
-.contact {
+
+.contact-info {
   font-weight: 700;
+}
+
+.footer-name {
+  font-size: .9em;
+  float: left;
 }
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .wrapper {
     min-height: calc(100vh - 257);
   }
   
   .container {
-    width: 85%;
-    max-width: 1025px;
+    width: 90%;
+    max-width: 1023px;
     margin: 0 auto;
   }
+  
+
   
   .profile-name,
   .main-nav a {
@@ -153,6 +160,12 @@ span {
     background-color: #fafafa;
   }
   
+  .headline {
+    float: left;
+    width: 100%;
+    background-color: white;
+  }
+  
   .col {
     width: 50%;
     float: left;
@@ -161,22 +174,52 @@ span {
   
   .profile-img {
     float: right;
-    width: 50%;
-    margin-left: 1em;
+    width: 20%;
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
   
-  header p {
+  .profile-description p {
+    display: inline-block;
+    width: 60%;
+    margin-top: 5em;
+  }
+  
+.contact {
+  font-size: 1.2em;
+  margin-right: 5em;
+  margin-left: 5em;
+}
+  
+  .footer-link {
+    display: none;
+  }
+  
+  .footer-nav {
+    display: inline-block;
+    float: right;
+    margin-right: 0;
+  }
+  
+  .footer-nav li {
     float: left;
-    width: 50%;
-    padding-right: 1em;
+    font-size: .8em;
+    margin-top: .8em;
+    margin-left: .75em;
+    text-transform: uppercase;
   }
 
   
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .wrapper {
     min-height: calc(100vh - 257);
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1150px;
   }
   
   .main-nav a {
@@ -185,18 +228,16 @@ span {
   
   .profile-img {
     float: right;
-    width: 50%;
+    width: 20%;
+    margin-top: 3em;
+    
+    margin-bottom: 3em;
   }
   
-  header p {
-    float: left;
-    width: 50%;
-    padding-right: 1em;
-  }
-  
-  .container {
-    width: 80%;
-    max-width: 1150px;
+  .profile-description p {
+    display: inline-block;
+    width: 60%;
+    margin-top: 6em;
   }
   
   .profile-name,
@@ -214,9 +255,7 @@ span {
   }
   
   .col {
-    align-items: baseline;
     width: 33.3%;
-    padding: 1em;
   }
 }
 
