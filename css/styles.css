@@ -1,6 +1,11 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Noto Sans', sans-serif;
   line-height: 1.6;
@@ -14,6 +19,8 @@ h5 {
 }
 
 h2 {
+  text-align: center;
+  float: none;
   font-size: 1em;
 }
 
@@ -23,12 +30,9 @@ p {
 }
 
 a {
+  font-weight: 700;
   text-decoration: none;
   color: #494949;
-}
-
-hr {
-  max-width: 90%;
 }
 
 img {
@@ -48,6 +52,7 @@ span {
 /* ---- Navigation ---- */
 
 .profile-name {
+  text-align: center;
   margin: 0;
 }
 
@@ -55,10 +60,13 @@ span {
   margin-top: 5px;
 }
 
+.main-nav li {
+  text-align: center;
+}
+
 .main-nav a {
   display: block;
   font-size: .95em;
-  font-weight: 700;
   color: #494949;
   background-color: white;
   margin-top: 5px;
@@ -70,25 +78,31 @@ span {
   color: ;
 }
 
-
-
 /* ---- Layout Containers ---- */
+
 
 .main-header {
   padding-top: .5em;
   padding-bottom: .5em;
 }
 
-.wrapper {
-  background-color: white;
-}
-.col {
+.container {
   text-align: center;
+  background-color: #fafafa;
   padding: 1em;
 }
 
-.main-footer {
-  text-align: center;
+.profile-description {
+  align-content: center;
+}
+
+.profile-img {
+  max-width: 70%;
+}
+
+.col {
+  background-color: white;
+  padding: 1em;
 }
 
 .footer-name {
@@ -104,10 +118,12 @@ span {
 
 /* ---- Page Elements ---- */
 
+/*
 .main-header img {
   max-width: 70%;
   margin-top: 50px;
 }
+*/
 .contact {
   font-weight: 700;
 }
@@ -118,8 +134,69 @@ span {
 
 @media (min-width: 769px) {
   .wrapper {
-    width: 90%;
+    min-height: calc(100vh - 257);
+  }
+  
+  .container {
+    width: 85%;
+    max-width: 1025px;
     margin: 0 auto;
+  }
+  
+  .profile-name,
+  .main-nav a {
+    display: inline-block;
+    width: 50%;
+  }
+  
+  .main-nav a {
+    background-color: #fafafa;
+  }
+  
+  .col {
+    width: 50%;
+    float: left;
+    padding: 1em;
+  }
+  
+  .profile-img {
+    float: right;
+    width: 50%;
+    margin-left: 1em;
+  }
+  
+  header p {
+    float: left;
+    width: 50%;
+    padding-right: 1em;
+  }
+
+  
+}
+
+@media (min-width: 1025px) {
+  .wrapper {
+    min-height: calc(100vh - 257);
+  }
+  
+  .main-nav a {
+    background-color: #fafafa;
+  }
+  
+  .profile-img {
+    float: right;
+    width: 50%;
+  }
+  
+  header p {
+    float: left;
+    width: 50%;
+    padding-right: 1em;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1150px;
   }
   
   .profile-name,
@@ -137,21 +214,9 @@ span {
   }
   
   .col {
-    width: 50%;
-  }
-
-  
-}
-
-@media (min-width: 1025px) {
-  .wrapper {
-    width: 80%;
-    max-width: 1150px;
-  }
-  
-  .col {
-    float: left;
-    width: 33.3%
+    align-items: baseline;
+    width: 33.3%;
+    padding: 1em;
   }
 }
 
