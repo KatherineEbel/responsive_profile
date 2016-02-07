@@ -68,8 +68,8 @@ span {
   text-transform: uppercase;
 }
 
-.main-nav a:hover {
-  color: ;
+a:hover {
+  color: #8f8f8f;
 }
 
 .footer-link {
@@ -139,7 +139,7 @@ span {
 
 @media (min-width: 768px) {
   .wrapper {
-    min-height: calc(100vh - 257);
+    min-height: calc(100vh - 257px);
   }
   
   .container {
@@ -214,7 +214,7 @@ span {
 
 @media (min-width: 1024px) {
   .wrapper {
-    min-height: calc(100vh - 257);
+    min-height: calc(100vh - 257px);
   }
   
   .container {
