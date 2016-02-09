@@ -9,8 +9,8 @@
 body {
   font-family: 'Noto Sans', sans-serif;
   line-height: 1.6;
-  color: #494949;
-  background-color: #fafafa;
+  color: #D59852;
+  background-color: #38281B;
 }
 
 h1,
@@ -24,14 +24,14 @@ h2 {
 }
 
 p {
-  color: #8f8f8f;
+  color: #D59852;
   margin: 1em;
 }
 
 a {
   font-weight: 700;
   text-decoration: none;
-  color: #494949;
+  color: #D59852;
 }
 
 img {
@@ -39,7 +39,7 @@ img {
 }
 
 span {
-  color: #8f8f8f;
+  color: #D59852;
   line-height: 2.0;
 }
 
@@ -61,15 +61,16 @@ span {
 .main-nav a {
   display: block;
   font-size: .95em;
-  color: #494949;
-  background-color: white;
+  color: #38281B;
+  background-color: #D59852;
   margin-top: 5px;
   padding: 10px 15px;
   text-transform: uppercase;
 }
 
 a:hover {
-  color: #8f8f8f;
+  cursor: pointer;
+  color: #503C23;
 }
 
 .footer-link {
@@ -94,20 +95,22 @@ a:hover {
   max-width: 90%;
   margin: 0 auto;
   text-align: center;
-  background-color: #fafafa;
+  background-color: #38281B;
 }
 
 .profile-description {
   vertical-align: middle;
+  border-bottom: 6px inset #D59852;
 }
 
 .profile-img {
   width: 40%;
   height: 40%;
+  margin-right: 1em;
 }
 
 .col {
-  background-color: white;
+  background-color: #121011;
   padding: 1em;
 }
 
@@ -121,7 +124,7 @@ a:hover {
 .headline {
   float: left;
   width: 100%;
-  background-color: white;
+  background-color: #38281B;
 }
 
 .contact-info {
@@ -148,22 +151,25 @@ a:hover {
     margin: 0 auto;
   }
   
-
+  .main-nav a {
+    color: #D59852;
+    background-color: #38281B;
+  }
+  
+  .main-nav li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+  }
   
   .profile-name,
   .main-nav a {
     display: inline-block;
-    width: 50%;
-  }
-  
-  .main-nav a {
-    background-color: #fafafa;
   }
   
   .headline {
     float: left;
     width: 100%;
-    background-color: white;
   }
   
   .col {
@@ -222,15 +228,10 @@ a:hover {
     max-width: 1150px;
   }
   
-  .main-nav a {
-    background-color: #fafafa;
-  }
-  
   .profile-img {
     float: right;
     width: 20%;
     margin-top: 3em;
-    
     margin-bottom: 3em;
   }
   
