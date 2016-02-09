@@ -114,6 +114,10 @@ a:hover {
   padding: 1em;
 }
 
+.col:hover {
+  border: 2px solid #D59852;
+}
+
 
 /* ---- Page Elements ---- */
 
