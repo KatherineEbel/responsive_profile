@@ -107,18 +107,12 @@ a:hover {
 .profile-img {
   width: 40%;
   height: 40%;
-  margin-right: 2em;
 }
 
 .col {
   background-color: #121011;
   padding: 1em;
 }
-
-.col:hover {
-  border: 1px solid #D59852;
-}
-
 
 /* ---- Page Elements ---- */
 
@@ -172,15 +166,10 @@ a:hover {
     display: inline-block;
   }
   
-  .headline {
-    float: left;
-    width: 100%;
-  }
-  
   .col {
     width: 50%;
     float: left;
-    padding: 1em;
+  
   }
   
   .profile-img {
