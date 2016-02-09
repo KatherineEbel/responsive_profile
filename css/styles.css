@@ -35,6 +35,7 @@ a {
 }
 
 img {
+  margin-top: 1em;
   max-width: 100%;
 }
 
@@ -106,7 +107,7 @@ a:hover {
 .profile-img {
   width: 40%;
   height: 40%;
-  margin-right: 1em;
+  margin-right: 2em;
 }
 
 .col {
@@ -115,7 +116,7 @@ a:hover {
 }
 
 .col:hover {
-  border: 2px solid #D59852;
+  border: 1px solid #D59852;
 }
 
 
