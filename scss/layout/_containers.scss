@@ -1,0 +1,47 @@
+/* ---- Layout Containers ---- */
+
+  .wrapper {
+		@extend %clearfix;
+		@include mq(medium) {
+			min-height: calc(100vh - 257px);
+		}
+    @include mq(large) {
+			min-height: calc(100vh - 257px);
+		}
+  }
+
+
+.main-header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.container {
+	@extend %clearfix;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #38281B;
+	@include mq(medium) {
+		width: 90%;
+    max-width: 1023px;
+    margin: 0 auto;
+	}
+	@include mq(large) {
+		width: 90%;
+    max-width: 1150px;
+	}
+}
+
+.col {
+  background-color: #121011;
+  padding: 1em;
+	@include mq(medium) {
+		width: 50%;
+    float: left;
+	}
+	@include mq(large) {
+		float: left;
+		width: 33.3%;
+	}
+}

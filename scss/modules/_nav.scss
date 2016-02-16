@@ -1,0 +1,40 @@
+//====================================
+// Navigation
+//====================================
+
+.main-nav {
+	margin-top: 5px;
+	@include mq(large) {
+		float: right;
+	}
+	& li {
+		@include mq(medium) {
+			display: inline-block;
+    	margin-right: 10px;		
+		}
+		text-align: center;
+	}
+	& a {
+		display: block;
+  	font-size: .95em;
+  	color: #38281B;
+  	background-color: #D59852;
+  	margin-top: 5px;
+  	padding: 10px 15px;
+  	text-transform: uppercase;
+		@include mq(medium) {
+			display: inline-block;
+	    color: #D59852;
+    	background-color: #38281B;
+		}
+	}
+	&:hover {
+	  cursor: pointer;
+  	color: #503C23;
+	}
+}
+
+
+
+
+
