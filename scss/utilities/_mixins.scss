@@ -1,12 +1,7 @@
 // Media Queries
 
 @mixin mq($break) {
-	@if $break == "small" {
-		@media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
-			@content;
-		}
-	}
-	@else if $break == "medium" {
+	@if $break == "medium" {
 		@media (min-width: $brkpoint-md + 1) {
 			@content;
 		}
@@ -21,14 +16,5 @@
 	}
 }
 
-// Image replacement
-
-@mixin img-replace($img, $w, $h, $disp: block) {
-	background-image: url('#{$path--rel}/#{$img}');
-	background-repeat: no-repeat;
-	width: $w;
-	height: $h;
-	display: $disp;
-}
 
 
