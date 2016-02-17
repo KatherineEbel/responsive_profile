@@ -9,7 +9,7 @@
 
 .container {
 	@extend %clearfix;
-  max-width: 90%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
   background-color: map-get($color-scheme, main-background);

@@ -1,4 +1,3 @@
-/* Utilities  */
 /* Colors */
 /* Color Scheme */
 /* Fonts */
@@ -415,14 +414,13 @@ span {
   color: #D59852;
   line-height: 2.0; }
 
-/* SCSS Document */
 /* ---- Layout Containers ---- */
 @media (min-width: 769px) {
   .wrapper {
     min-height: calc(100vh - $height); } }
 
 .container {
-  max-width: 90%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
   background-color: #38281B; }
