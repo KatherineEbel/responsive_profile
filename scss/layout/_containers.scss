@@ -9,18 +9,15 @@
 
 .container {
 	@extend %clearfix;
-  width: 90%;
+	@extend %centered;
+  width: $base-container--width;
   margin: 0 auto;
-  text-align: center;
   background-color: map-get($color-scheme, main-background);
 	@include mq(medium) {
-		width: 90%;
-    max-width: 1023px;
-    margin: 0 auto;
+    max-width: $container-md--maxwidth;
 	}
 	@include mq(large) {
-		width: 90%;
-    max-width: 1150px;
+    max-width: $container-lg--maxwidth;
 	}
 }
 
@@ -28,11 +25,9 @@
   background-color: map-get($color-scheme, columns);
   padding: 1em;
 	@include mq(medium) {
-		width: 50%;
-    float: left;
+		@include positionCol(left, $med-col--width);
 	}
 	@include mq(large) {
-		float: left;
-		width: 33.3%;
+		@include positionCol(left, $lg-col--width);
 	}
 }

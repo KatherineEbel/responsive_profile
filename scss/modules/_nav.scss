@@ -12,7 +12,7 @@
 			display: inline-block;
     	margin-right: 10px;		
 		}
-		text-align: center;
+		@extend %centered;
 	}
 	& a {
 		display: block;
@@ -28,10 +28,22 @@
     	background-color: map-get($color-scheme, main-background);
 		}
 		&:hover {
-	  	cursor: pointer;
-  		color: map-get($color-scheme, link-hover);
+	  	@extend %link-hover;
 		}
 	}
+}
+
+.icn--nav-toggle {
+	@include p-el(before, 25px, 3px) {
+		background: map-get($color-scheme, text);
+		margin-top: 4px;	
+	}
+	width: 25px;
+	height: 17px;
+	margin: 0 auto;
+	border-top: solid 3px map-get($color-scheme, text);
+	border-bottom: solid 3px map-get($color-scheme, text);
+	display: none;
 }
 
 

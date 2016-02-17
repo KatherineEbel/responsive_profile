@@ -1,6 +1,5 @@
 /* CSS Document */
 
-
 .footer {
 		&-name {
 			font-size: .9em;
@@ -13,21 +12,27 @@
 			}
 			float: right;
 			font-size: .8em;
-			margin-top: .8em;
-			margin-left: .75em;
+			margin-top: $base-margin;
+			margin-left: $base-margin;
 			text-transform: uppercase;
+			&:hover {
+	  		@extend %link-hover;
+			}
 		}
 		
 		&-nav li {
 			@include mq(medium) {
 				display: inline-block;
 				float: right;
-				font-size: .9em;
+				font-size: $font-size--regular;
 				text-transform: uppercase;
-				margin-right: 10px;	
-				margin-top: .9em;
+				margin-right: $base-margin;	
+				margin-top: $base-margin;
 			}
 			display: none;
+			& a:hover {
+	  			@extend %link-hover;
+				}
 		}
 	}
 

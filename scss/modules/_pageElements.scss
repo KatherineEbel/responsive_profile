@@ -15,16 +15,16 @@
 		float: left;
 	}
   margin: 0 auto;
-  }
+	padding-bottom: .5em;
+}
 
 .headline {
-  float: left;
-  width: 100%;
+  @include positionCol(left, 100%);
   background-color: map-get($color-scheme, main-background);
 }
 
 .contact-info {
-  font-weight: 700;
+  font-weight: $font-weight--bold;
 }
 
 
@@ -42,8 +42,7 @@
 
 .profile-img {
 	@include mq(medium) {
-		float: right;
-    width: 20%;
+		@include positionCol(right, 20%);
     margin-top: 3em;
     margin-bottom: 3em;
 	}
@@ -54,7 +53,8 @@
 .contact {
 	@include mq(medium) {
 	  font-size: 1.2em;
-  	margin-right: 5em;
-  	margin-left: 5em;	
+  	padding-right: 1em;
+		padding-left: 1em;
 	}
+	border-bottom: 3px solid map-get($color-scheme, text);
 }
