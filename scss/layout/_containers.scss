@@ -1,19 +1,10 @@
 /* ---- Layout Containers ---- */
 
-  .wrapper {
+.wrapper {
 		@extend %clearfix;
 		@include mq(medium) {
-			min-height: calc(100vh - 257px);
+			@include stickyFooter($footer-height);
 		}
-    @include mq(large) {
-			min-height: calc(100vh - 257px);
-		}
-  }
-
-
-.main-header {
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
 
 .container {
@@ -21,7 +12,7 @@
   max-width: 90%;
   margin: 0 auto;
   text-align: center;
-  background-color: #38281B;
+  background-color: map-get($color-scheme, main-background);
 	@include mq(medium) {
 		width: 90%;
     max-width: 1023px;
@@ -34,7 +25,7 @@
 }
 
 .col {
-  background-color: #121011;
+  background-color: map-get($color-scheme, columns);
   padding: 1em;
 	@include mq(medium) {
 		width: 50%;

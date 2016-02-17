@@ -17,20 +17,20 @@
 	& a {
 		display: block;
   	font-size: .95em;
-  	color: #38281B;
-  	background-color: #D59852;
+  	color: map-get($color-scheme, main-background);
+  	background-color: map-get($color-scheme, text);
   	margin-top: 5px;
   	padding: 10px 15px;
   	text-transform: uppercase;
 		@include mq(medium) {
 			display: inline-block;
-	    color: #D59852;
-    	background-color: #38281B;
+	    color: map-get($color-scheme, text);
+    	background-color: map-get($color-scheme, main-background);
 		}
-	}
-	&:hover {
-	  cursor: pointer;
-  	color: #503C23;
+		&:hover {
+	  	cursor: pointer;
+  		color: map-get($color-scheme, link-hover);
+		}
 	}
 }
 

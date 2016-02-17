@@ -2,6 +2,11 @@
 // Page Elements
 //====================================
 
+.main-header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 .profile-name {
 	@include mq(medium) {
 		display: inline-block;
@@ -15,7 +20,7 @@
 .headline {
   float: left;
   width: 100%;
-  background-color: #38281B;
+  background-color: map-get($color-scheme, main-background);
 }
 
 .contact-info {
@@ -25,7 +30,7 @@
 
 .profile-description {
   vertical-align: middle;
-  border-bottom: 6px inset #D59852;
+  border-bottom: 6px inset map-get($color-scheme, text);
 	& p {
 		@include mq(medium) {
 			display: inline-block;

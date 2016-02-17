@@ -17,4 +17,10 @@
 }
 
 
+// Sticky Footer
+
+@mixin stickyFooter($height) {
+	min-height: calc(100vh - $height);
+}
+
 

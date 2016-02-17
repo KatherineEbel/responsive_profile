@@ -7,10 +7,10 @@
 }
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: $font-family--primary;
   line-height: 1.6;
-  color: #D59852;
-  background-color: #38281B;
+  color: map-get($color-scheme, text);
+  background-color: map-get($color-scheme, main-background);
 }
 
 h1,
@@ -24,14 +24,14 @@ h2 {
 }
 
 p {
-  color: #D59852;
+  color: map-get($color-scheme, text);
   margin: 1em;
 }
 
 a {
   font-weight: 700;
   text-decoration: none;
-  color: #D59852;
+  color: map-get($color-scheme, text);
 }
 
 img {
@@ -40,7 +40,7 @@ img {
 }
 
 span {
-  color: #D59852;
+  color: map-get($color-scheme, text);
   line-height: 2.0;
 }
 
