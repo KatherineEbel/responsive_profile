@@ -44,6 +44,10 @@
 	border-top: solid 3px map-get($color-scheme, text);
 	border-bottom: solid 3px map-get($color-scheme, text);
 	display: none;
+	&:hover {
+		cursor: pointer;
+		border-color: map-get($color-scheme, link-hover);
+	}
 }
 
 

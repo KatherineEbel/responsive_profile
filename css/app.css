@@ -490,6 +490,9 @@ span {
     height: 3px;
     background: #D59852;
     margin-top: 4px; }
+  .icn--nav-toggle:hover {
+    cursor: pointer;
+    border-color: #e9c9a4; }
 
 .main-header {
   padding-top: 1em;
