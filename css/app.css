@@ -8,6 +8,17 @@
   display: table;
   clear: both; }
 
+.icn--nav-toggle:before {
+  display: block;
+  content: ''; }
+
+h2, .container, .main-nav li {
+  text-align: center; }
+
+.main-nav a:hover, .footer-link:hover, .footer-nav li a:hover {
+  cursor: pointer;
+  color: #e9c9a4; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -389,12 +400,14 @@ body {
   color: #D59852;
   background-color: #38281B; }
 
+hr {
+  background-color: #D59852; }
+
 h1,
 h5 {
   font-weight: 700; }
 
 h2 {
-  text-align: center;
   font-size: 1em; }
 
 p {
@@ -422,16 +435,12 @@ span {
 .container {
   width: 90%;
   margin: 0 auto;
-  text-align: center;
   background-color: #38281B; }
   @media (min-width: 769px) {
     .container {
-      width: 90%;
-      max-width: 1023px;
-      margin: 0 auto; } }
+      max-width: 1023px; } }
   @media (min-width: 1100px) {
     .container {
-      width: 90%;
       max-width: 1150px; } }
 
 .col {
@@ -439,24 +448,22 @@ span {
   padding: 1em; }
   @media (min-width: 769px) {
     .col {
-      width: 50%;
-      float: left; } }
+      float: left;
+      width: 50%; } }
   @media (min-width: 1100px) {
     .col {
       float: left;
-      width: 33.3%; } }
+      width: 33%; } }
 
 .main-nav {
   margin-top: 5px; }
   @media (min-width: 1100px) {
     .main-nav {
       float: right; } }
-  .main-nav li {
-    text-align: center; }
-    @media (min-width: 769px) {
-      .main-nav li {
-        display: inline-block;
-        margin-right: 10px; } }
+  @media (min-width: 769px) {
+    .main-nav li {
+      display: inline-block;
+      margin-right: 10px; } }
   .main-nav a {
     display: block;
     font-size: .95em;
@@ -470,16 +477,27 @@ span {
         display: inline-block;
         color: #D59852;
         background-color: #38281B; } }
-    .main-nav a:hover {
-      cursor: pointer;
-      color: #dfb07b; }
+
+.icn--nav-toggle {
+  width: 25px;
+  height: 17px;
+  margin: 0 auto;
+  border-top: solid 3px #D59852;
+  border-bottom: solid 3px #D59852;
+  display: none; }
+  .icn--nav-toggle:before {
+    width: 25px;
+    height: 3px;
+    background: #D59852;
+    margin-top: 4px; }
 
 .main-header {
   padding-top: 1em;
   padding-bottom: 1em; }
 
 .profile-name {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: .5em; }
   @media (min-width: 769px) {
     .profile-name {
       display: inline-block; } }
@@ -514,11 +532,13 @@ span {
       margin-top: 3em;
       margin-bottom: 3em; } }
 
-@media (min-width: 769px) {
-  .contact {
-    font-size: 1.2em;
-    margin-right: 5em;
-    margin-left: 5em; } }
+.contact {
+  border-bottom: 3px solid #D59852; }
+  @media (min-width: 769px) {
+    .contact {
+      font-size: 1.2em;
+      padding-right: 1em;
+      padding-left: 1em; } }
 
 /* CSS Document */
 .footer-name {
@@ -527,8 +547,8 @@ span {
 .footer-link {
   float: right;
   font-size: .8em;
-  margin-top: .8em;
-  margin-left: .75em;
+  margin-top: 1em;
+  margin-left: 1em;
   text-transform: uppercase; }
   @media (min-width: 769px) {
     .footer-link {
@@ -539,9 +559,26 @@ span {
     .footer-nav li {
       display: inline-block;
       float: right;
-      font-size: .9em;
+      font-size: 1em;
       text-transform: uppercase;
-      margin-right: 10px;
-      margin-top: .9em; } }
+      margin-right: 1em;
+      margin-top: 1em; } }
+
+@media (min-width: 1px) and (max-width: 768px) {
+  .is-collapsed-mobile {
+    visibility: collapse;
+    padding: 0;
+    height: 0;
+    margin: 0;
+    line-height: 0; } }
+
+@media (min-width: 1px) and (max-width: 768px) {
+  .is-displayed-mobile {
+    display: block; }
+    .is-hidden-mobile {
+      display: none; } }
+@media (min-width: 769px) {
+  .is-displayed-mobile {
+    display: none; } }
 
 /*# sourceMappingURL=app.css.map */

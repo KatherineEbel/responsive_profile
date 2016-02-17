@@ -9,3 +9,23 @@
 		display: table;
 		clear: both;
 	}
+	
+	// creating pseudo elements 
+	
+	%pseudos {
+  display: block;
+  content: ''; 
+	}
+	
+	
+	
+	%centered {
+		text-align: center;
+	}
+	
+	// lighten links when hovering
+	
+	%link-hover {
+		cursor: pointer;
+  	color: map-get($color-scheme, link-hover);
+	}
