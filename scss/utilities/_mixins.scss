@@ -1,0 +1,26 @@
+// Media Queries
+
+@mixin mq($break) {
+	@if $break == "medium" {
+		@media (min-width: $brkpoint-md + 1) {
+			@content;
+		}
+	}
+	@else if $break == "large" {
+		@media (min-width: $brkpoint-lg) {
+			@content;
+		}
+	}
+	@else  {
+		@error "Whoops! No value could be retrieved for `#{$break}`";
+	}
+}
+
+
+// Sticky Footer
+
+@mixin stickyFooter($height) {
+	min-height: calc(100vh - $height);
+}
+
+

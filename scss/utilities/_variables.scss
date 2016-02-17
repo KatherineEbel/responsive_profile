@@ -1,0 +1,39 @@
+
+
+/* Colors */
+
+$black-marlin: #38281B;
+$di-serria: #D59852;
+$saddle: #503C23;
+$cod-gray: #121011;
+
+
+/* Color Scheme */
+
+$color-scheme: (
+	main-background    : $black-marlin,
+	text               : $di-serria,
+	columns            : $cod-gray,
+	link-hover         : lighten($di-serria, 10%)
+);
+
+
+/* Fonts */
+
+$font-url--google        : "https://fonts.googleapis.com/css?family=Noto+Sans:400,700";
+$font-family--primary    : 'Noto Sans', sans-serif;
+
+// Import if Google Fonts URL is defined
+
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+// Footer height
+
+$footer-height  : 257px;
+
+
+// Break points
+$brkpoint-md   :768px;
+$brkpoint-lg   :1100px;

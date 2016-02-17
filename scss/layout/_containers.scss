@@ -1,0 +1,38 @@
+/* ---- Layout Containers ---- */
+
+.wrapper {
+		@extend %clearfix;
+		@include mq(medium) {
+			@include stickyFooter($footer-height);
+		}
+}
+
+.container {
+	@extend %clearfix;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: map-get($color-scheme, main-background);
+	@include mq(medium) {
+		width: 90%;
+    max-width: 1023px;
+    margin: 0 auto;
+	}
+	@include mq(large) {
+		width: 90%;
+    max-width: 1150px;
+	}
+}
+
+.col {
+  background-color: map-get($color-scheme, columns);
+  padding: 1em;
+	@include mq(medium) {
+		width: 50%;
+    float: left;
+	}
+	@include mq(large) {
+		float: left;
+		width: 33.3%;
+	}
+}

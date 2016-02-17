@@ -1,0 +1,36 @@
+/* CSS Document */
+
+
+.footer {
+		&-name {
+			font-size: .9em;
+  		float: left;
+		}
+		
+		&-link {
+			@include mq(medium) {
+			display: none;
+			}
+			float: right;
+			font-size: .8em;
+			margin-top: .8em;
+			margin-left: .75em;
+			text-transform: uppercase;
+		}
+		
+		&-nav li {
+			@include mq(medium) {
+				display: inline-block;
+				float: right;
+				font-size: .9em;
+				text-transform: uppercase;
+				margin-right: 10px;	
+				margin-top: .9em;
+			}
+			display: none;
+		}
+	}
+
+
+
+
