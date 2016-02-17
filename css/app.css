@@ -493,6 +493,8 @@ span {
   .icn--nav-toggle:hover {
     cursor: pointer;
     border-color: #e9c9a4; }
+  .icn--nav-toggle:hover:before {
+    background: #e9c9a4; }
 
 .main-header {
   padding-top: 1em;

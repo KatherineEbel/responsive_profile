@@ -48,6 +48,9 @@
 		cursor: pointer;
 		border-color: map-get($color-scheme, link-hover);
 	}
+	&:hover:before {
+		background: map-get($color-scheme, link-hover);
+	}
 }
 
 
