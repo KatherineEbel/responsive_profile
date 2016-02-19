@@ -569,21 +569,22 @@ span {
       margin-right: 1em;
       margin-top: 1em; } }
 
-@media (min-width: 1px) and (max-width: 768px) {
-  .is-collapsed-mobile {
-    visibility: collapse;
-    padding: 0;
-    height: 0;
-    margin: 0;
-    line-height: 0; } }
+.is-collapsed-mobile {
+  visibility: collapse;
+  padding: 0;
+  height: 0;
+  margin: 0;
+  line-height: 0; }
+  @media (min-width: 769px) {
+    .is-collapsed-mobile {
+      visibility: visible; } }
 
-@media (min-width: 1px) and (max-width: 768px) {
-  .is-displayed-mobile {
-    display: block; }
-    .is-hidden-mobile {
+.is-displayed-mobile {
+  display: block; }
+  .is-hidden-mobile {
+    display: none; }
+  @media (min-width: 769px) {
+    .is-displayed-mobile {
       display: none; } }
-@media (min-width: 769px) {
-  .is-displayed-mobile {
-    display: none; } }
 
 /*# sourceMappingURL=app.css.map */
