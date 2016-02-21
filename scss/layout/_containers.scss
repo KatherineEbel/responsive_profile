@@ -26,6 +26,7 @@
   padding: 1em;
 	@include mq(medium) {
 		@include positionCol(left, $med-col--width);
+		min-height: 500px;	
 	}
 	@include mq(large) {
 		@include positionCol(left, $lg-col--width);
